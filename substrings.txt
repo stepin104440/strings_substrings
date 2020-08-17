@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    char strip[40];
+    int i=0;
+    scanf("%s", strip);
+    printf("\"");
+     while(strip[i]!='\0')
+     {
+         if(strip[i]!= '_')
+         {
+             printf("%c", strip[i]);
+             i++;
+         }
+         else
+         {
+            printf("\", \"");
+             i++;
+         }
+     }
+     printf("\"");
+     return 0;
+}
